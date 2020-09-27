@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0433RoutedEventDriectEventTrigger", "0433RoutedEventDriectEventTrigger\0433RoutedEventDriectEventTrigger.csproj", "{555BF415-060F-49E2-80D2-7CA1F19EDD1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{555BF415-060F-49E2-80D2-7CA1F19EDD1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{555BF415-060F-49E2-80D2-7CA1F19EDD1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{555BF415-060F-49E2-80D2-7CA1F19EDD1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{555BF415-060F-49E2-80D2-7CA1F19EDD1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {668E2378-B056-4BD6-9D70-AB35953BA10A}
+	EndGlobalSection
+EndGlobal
