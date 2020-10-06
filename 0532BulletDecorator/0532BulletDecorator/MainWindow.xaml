@@ -1,0 +1,43 @@
+﻿<Window x:Class="_0532BulletDecorator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_0532BulletDecorator"
+        mc:Ignorable="d"
+        Title="UseBulletDecorator" Height="150" Width="300">
+    <StackPanel Orientation="Vertical" Background="LightGreen">
+        <StackPanel Orientation="Horizontal">
+            <BulletDecorator>
+                <BulletDecorator.Bullet>
+                    <Image Width="32" Height="32" Source="C:\MediaData\bullet_red.png" Stretch="None"
+                       HorizontalAlignment="Left" VerticalAlignment="Center" >
+                    </Image>
+                </BulletDecorator.Bullet>
+            </BulletDecorator>
+            <Label Content="Choice 1" Foreground="Red" VerticalAlignment="Center" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <BulletDecorator>
+                <BulletDecorator.Bullet>
+                    <Image Width="32" Height="32" Source="C:\MediaData\bullet_blue.png" Stretch="None"
+                       HorizontalAlignment="Left" VerticalAlignment="Center" >
+                    </Image>
+                </BulletDecorator.Bullet>
+            </BulletDecorator>
+            <Label Content="Choice 2" Foreground="Blue" VerticalAlignment="Center" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <BulletDecorator>
+                <BulletDecorator.Bullet>
+                    <Image Width="32" Height="32" Source="C:\MediaData\bullet_black.png" Stretch="None"
+                       HorizontalAlignment="Left" VerticalAlignment="Center" >
+                    </Image>
+                </BulletDecorator.Bullet>
+            </BulletDecorator>
+            <Label Content="Choice 3" Foreground="Black" VerticalAlignment="Center" />
+        </StackPanel>
+    </StackPanel>
+</Window>

@@ -1,0 +1,34 @@
+﻿<Window x:Class="_0533GroupBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_0533GroupBox"
+        mc:Ignorable="d"
+        Title="UseGroupBox" Height="200" Width="350">
+    <Grid>
+        <GroupBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                  Header="Customer Information" Margin="8" BorderBrush="#FFD5DFE5">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0">First Name:</Label>
+                <Label Grid.Row="1" Grid.Column="0">Last Name:</Label>
+                <Label Grid.Row="2" Grid.Column="0">Shoe Size:</Label>
+                <Label Grid.Row="3" Grid.Column="0">Favorite Movie:</Label>
+                <TextBox Grid.Row="0" Grid.Column="1">길동</TextBox>
+                <TextBox Grid.Row="1" Grid.Column="1">홍</TextBox>
+                <TextBox Grid.Row="2" Grid.Column="1">265</TextBox>
+                <TextBox Grid.Row="3" Grid.Column="1">사운드 오브 뮤직</TextBox>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

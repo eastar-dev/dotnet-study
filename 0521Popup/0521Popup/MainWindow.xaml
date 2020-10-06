@@ -1,0 +1,40 @@
+﻿<Window x:Class="_0521Popup.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_0521Popup"
+        mc:Ignorable="d"
+        Title="UsePopup" Height="260" Width="320">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" Height="35" Margin="4">
+            <Label Width="200" Content="오백원권 화폐"/>
+            <Image Name="img1" Stretch="Uniform" Source="C:\MediaData\500.jpg"
+                   MouseEnter="img_MouseEnter" MouseLeave="img_MouseLeave" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="35" Margin="4">
+            <Label Width="200" Content="일천원권 화폐"/>
+            <Image Name="img2" Stretch="Uniform" Source="C:\MediaData\1000.jpg"
+                   MouseEnter="img_MouseEnter" MouseLeave="img_MouseLeave" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="35" Margin="4">
+            <Label Width="200" Content="오천원권 화폐"/>
+            <Image Name="img3" Stretch="Uniform" Source="C:\MediaData\5000.jpg"
+                   MouseEnter="img_MouseEnter" MouseLeave="img_MouseLeave" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="35" Margin="4">
+            <Label Width="200" Content="일만원권 화폐"/>
+            <Image Name="img4" Stretch="Uniform" Source="C:\MediaData\10000.jpg"
+                   MouseEnter="img_MouseEnter" MouseLeave="img_MouseLeave" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="35" Margin="4">
+            <Label Width="200" Content="오만원권 화폐"/>
+            <Image Name="img5" Stretch="Uniform" Source="C:\MediaData\50000.jpg"
+                   MouseEnter="img_MouseEnter" MouseLeave="img_MouseLeave" />
+        </StackPanel>
+        <Popup Name="popFullScale" Placement="Right"  HorizontalOffset="5"
+            VerticalOffset="5">
+            <Image Name="imgFullScale" Stretch="None"/>
+        </Popup>
+    </StackPanel>
+</Window>
