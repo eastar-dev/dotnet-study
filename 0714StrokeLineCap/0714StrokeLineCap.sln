@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0714StrokeLineCap", "0714StrokeLineCap\0714StrokeLineCap.csproj", "{64CEEF0C-B44A-4E15-B91D-B12A9D373ECF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64CEEF0C-B44A-4E15-B91D-B12A9D373ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64CEEF0C-B44A-4E15-B91D-B12A9D373ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64CEEF0C-B44A-4E15-B91D-B12A9D373ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64CEEF0C-B44A-4E15-B91D-B12A9D373ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CADAEE9-CEF4-4BDA-9B64-A5D8B17B2409}
+	EndGlobalSection
+EndGlobal

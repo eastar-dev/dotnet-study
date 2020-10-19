@@ -1,0 +1,16 @@
+﻿<Window x:Class="_0621MouseInput.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_0621MouseInput"
+        mc:Ignorable="d"
+        Title="MouseEventTest" Height="300" Width="300">
+    <Grid>
+        <Ellipse Margin="70,47,72,79" Name="ellipse1" Stroke="Black" Fill="Red" />
+        <Label Height="28" Margin="0,0,0,12" Name="label1" VerticalAlignment="Bottom"
+               HorizontalAlignment="Center">Mouse Event</Label>
+        <Button Name="button1" Height="23" HorizontalAlignment="Right" VerticalAlignment="Top"
+                Width="75" Click="button1_Click">Button</Button>
+    </Grid>
+</Window>

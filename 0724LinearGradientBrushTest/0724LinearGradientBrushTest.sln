@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0724LinearGradientBrushTest", "0724LinearGradientBrushTest\0724LinearGradientBrushTest.csproj", "{5AE15EF0-0108-446A-A092-EF2F00D8B198}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AE15EF0-0108-446A-A092-EF2F00D8B198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE15EF0-0108-446A-A092-EF2F00D8B198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE15EF0-0108-446A-A092-EF2F00D8B198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE15EF0-0108-446A-A092-EF2F00D8B198}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2FBA3E6-452A-43A6-B60E-2D56928EC5EA}
+	EndGlobalSection
+EndGlobal

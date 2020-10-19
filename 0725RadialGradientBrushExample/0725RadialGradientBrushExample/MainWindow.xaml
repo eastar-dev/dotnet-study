@@ -1,0 +1,26 @@
+﻿<Window x:Class="_0725RadialGradientBrushExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_0725RadialGradientBrushExample"
+        mc:Ignorable="d"
+       Title="RadialGradientBrush Example" Height="320" Width="320"
+     Background="White" Margin="20">
+    <StackPanel>
+        <!-- 이 사각형은 방사형 그래디언트 브러쉬로 칠해집니다 -->
+        <Rectangle Width="300" Height="300">
+            <Rectangle.Fill>
+                <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5" 
+                     RadiusX="0.5" RadiusY="0.5">
+                    <RadialGradientBrush.GradientStops>
+                        <GradientStop Color="Ivory" Offset="0" />
+                        <GradientStop Color="DarkRed" Offset="0.25" />
+                        <GradientStop Color="Orange" Offset="0.50" />
+                        <GradientStop Color="Blue" Offset="1" />
+                    </RadialGradientBrush.GradientStops>
+                </RadialGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+    </StackPanel>
+</Window>
