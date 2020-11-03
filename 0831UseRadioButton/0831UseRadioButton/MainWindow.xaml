@@ -1,0 +1,32 @@
+﻿<Window x:Class="_0831UseRadioButton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_0831UseRadioButton"
+        mc:Ignorable="d"
+           Title="UseRadioButton" Width="520" Height="160" FontSize="16" FontWeight="Bold">
+    <StackPanel Orientation="Horizontal">
+        <GroupBox Width="160" Margin="4" Header="CPU">
+            <StackPanel Margin="8">
+                <RadioButton Content="인텔 i3"/>
+                <RadioButton Content="인텔 i5"/>
+                <RadioButton Content="인텔 i7" IsChecked="True"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Width="160" Margin="4" Header="Memory">
+            <StackPanel Margin="8">
+                <RadioButton Content="2GB" IsChecked="True"/>
+                <RadioButton Content="4GB" />
+                <RadioButton Content="16GB" />
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Width="160" Margin="4" Header="HDD">
+            <StackPanel Margin="8">
+                <RadioButton Content="500GB"/>
+                <RadioButton Content="1TB" IsChecked="True"/>
+                <RadioButton Content="2TB"/>
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</Window>

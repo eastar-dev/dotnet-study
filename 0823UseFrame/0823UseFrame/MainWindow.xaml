@@ -1,0 +1,31 @@
+﻿<Window x:Class="_0823UseFrame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_0823UseFrame"
+        mc:Ignorable="d"
+         Title="UseFrame" Width="700" Height="500" Background="LightSkyBlue">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ComboBox Grid.Row="0" SelectedIndex="0" Name="sduSites" Margin="5">
+            <ComboBoxItem Content="소프트웨어공학과  (http://software.sdu.ac.kr)"
+                  Tag="http://software.sdu.ac.kr"/>
+            <ComboBoxItem Content="패션학과  (http://fashion.sdu.ac.kr)"
+                  Tag="http://fashion.sdu.ac.kr"/>
+            <ComboBoxItem Content="미디어영상학과  (http://media.sdu.ac.kr)"
+                  Tag="http://media.sdu.ac.kr"/>
+            <ComboBoxItem Content="컴퓨터공학과  (http://it.sdu.ac.kr)"
+                  Tag="http://it.sdu.ac.kr"/>
+            <ComboBoxItem Content="생활환경디자인학과 (http://led.sdu.ac.kr)"
+                  Tag="http://led.sdu.ac.kr"/>
+        </ComboBox>
+        <Frame Name="fraGo" Grid.Row="1" HorizontalAlignment="Stretch" 
+                  VerticalAlignment="Stretch" Margin="5"
+                  Source="{Binding ElementName=sduSites, Path=SelectedItem.Tag}">
+        </Frame>
+    </Grid>
+</Window>

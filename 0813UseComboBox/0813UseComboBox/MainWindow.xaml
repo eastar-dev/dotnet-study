@@ -1,0 +1,101 @@
+﻿<Window x:Class="_0813UseComboBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_0813UseComboBox"
+        mc:Ignorable="d"
+         Title="UseComboBox" Width="640" Height="480" Background="{x:Null}">
+    <Grid x:Name="LayoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="C:\MediaData\Universe.jpg" Grid.Column="0" Grid.Row="0" 
+            Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  
+            Stretch="UniformToFill" />
+        <ComboBox IsSynchronizedWithCurrentItem="True" Grid.Row="0" Grid.Column="0"
+            VerticalAlignment="Top" Margin="10" SelectedIndex="2" Height="25" Width="120" 
+            Name="ComboBox1" SelectionChanged="ComboBox1_SelectionChanged">
+            <ComboBoxItem Content="수성(Mercury)"/>
+            <ComboBoxItem Content="금성(Venus)"/>
+            <ComboBoxItem Content="지구(Earth)"/>
+            <ComboBoxItem Content="화성(Mars)"/>
+            <ComboBoxItem Content="목성(Jupiter)"/>
+            <ComboBoxItem Content="토성(Saturn)"/>
+            <ComboBoxItem Content="천왕성(Uranus)"/>
+            <ComboBoxItem Content="해왕성(Neptune)"/>
+            <ComboBoxItem Content="명왕성(Pluto)"/>
+        </ComboBox>
+        <ComboBox IsSynchronizedWithCurrentItem="True" Grid.Row="0" Grid.Column="1"
+             VerticalAlignment="Top" Background="Black" SelectedIndex="2" Height="90" 
+             Width="120" Margin="10" FontWeight="Bold" FontSize="16" Name="ComboBox2" SelectionChanged="ComboBox2_SelectionChanged">
+            <ComboBoxItem Background="Black">
+                <StackPanel HorizontalAlignment="Stretch" Width="100">
+                    <Image Source="C:\MediaData\Mercury.png" Height="50" Width="Auto" 
+                           HorizontalAlignment="Center"/>
+                    <Label Content="수성" HorizontalAlignment="Center"                     
+                           Foreground="LightGray"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Background="Black">
+                <StackPanel HorizontalAlignment="Stretch" Width="100">
+                    <Image Source="C:\MediaData\Venus.png" Height="50" Width="Auto" 
+                           HorizontalAlignment="Center"/>
+                    <Label Content="금성" HorizontalAlignment="Center" Foreground="LightGray"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Background="Black">
+                <StackPanel HorizontalAlignment="Stretch" Width="100">
+                    <Image Source="C:\MediaData\Earth.png" Height="50" Width="Auto" 
+                           HorizontalAlignment="Center"/>
+                    <Label Content="지구" HorizontalAlignment="Center" Foreground="LightGray"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Background="Black">
+                <StackPanel HorizontalAlignment="Stretch" Width="100">
+                    <Image Source="C:\MediaData\Mars.png" Height="50" Width="Auto" 
+                         HorizontalAlignment="Center"/>
+                    <Label Content="화성" HorizontalAlignment="Center" Foreground="LightGray"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Background="Black">
+                <StackPanel HorizontalAlignment="Stretch" Width="100">
+                    <Image Source="C:\MediaData\Jupiter.png" Height="50" Width="Auto" 
+                        HorizontalAlignment="Center"/>
+                    <Label Content="목성" HorizontalAlignment="Center" Foreground="LightGray"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Background="Black">
+                <StackPanel HorizontalAlignment="Stretch" Width="100">
+                    <Image Source="C:\MediaData\Saturn.png" Height="50" Width="Auto" 
+                        HorizontalAlignment="Center"/>
+                    <Label Content="토성" HorizontalAlignment="Center" Foreground="LightGray"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Background="Black">
+                <StackPanel HorizontalAlignment="Stretch" Width="100">
+                    <Image Source="C:\MediaData\Uranus.png" Height="50" Width="Auto" 
+                        HorizontalAlignment="Center"/>
+                    <Label Content="천왕성" HorizontalAlignment="Center" 
+                        Foreground="LightGray"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Background="Black">
+                <StackPanel HorizontalAlignment="Stretch" Width="100">
+                    <Image Source="C:\MediaData\Neptune.png" Height="50" Width="Auto" 
+                        HorizontalAlignment="Center"/>
+                    <Label Content="해왕성" HorizontalAlignment="Center" 
+                        Foreground="LightGray"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Background="Black">
+                <StackPanel HorizontalAlignment="Stretch" Width="100">
+                    <Image Source="C:\MediaData\Pluto.png" Height="50" Width="Auto" 
+                         HorizontalAlignment="Center"/>
+                    <Label Content="(명왕성)" HorizontalAlignment="Center" Foreground="Green"/>
+                </StackPanel>
+            </ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Window>
