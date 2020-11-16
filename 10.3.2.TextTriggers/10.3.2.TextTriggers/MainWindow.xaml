@@ -1,0 +1,77 @@
+﻿<Window x:Class="_10._3._2.TextTriggers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_10._3._2.TextTriggers"
+        mc:Ignorable="d"
+       Title="TextTriggers" Width="440" Height="310"
+    FontSize="14" FontWeight="Bold" Background="LightGray">
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Width" Value="220" />
+            <Style.Triggers>
+                <Trigger Property="Text" Value="">
+                    <Setter Property="Background" Value="Yellow" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Style.Triggers>
+                <Trigger Property="Text" Value="">
+                    <Setter Property="Background" Value="Yellow" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <StackPanel Margin="5">
+        <Grid Height="50">
+            <Rectangle Margin="50,5,50,10" RadiusX="5" RadiusY="20"
+			 Fill="Orange" Stroke="Red" StrokeThickness="1">
+                <Rectangle.BitmapEffect>
+                    <DropShadowBitmapEffect/>
+                </Rectangle.BitmapEffect>
+            </Rectangle>
+            <Label Margin="0,-5,0,0"
+			 HorizontalAlignment="Center" VerticalAlignment="Center"
+			 FontSize="20" Content="신입 사원 정보"/>
+        </Grid>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+            <Label Width="100" Content="성:"/>
+            <TextBox Text="홍" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+            <Label Width="100" Content="명:"/>
+            <TextBox Text="길동" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+            <Label Width="100" Content="직장 주소:"/>
+            <TextBox Text="서울시 마포구 독막로 320" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+            <Label Width="100" Content="집 주소:"/>
+            <TextBox Text="" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+            <Label Width="100" Content="성별:"/>
+            <ComboBox Width="50"
+			 HorizontalAlignment="Left" VerticalAlignment="Center">
+                <ComboBoxItem Content="남" />
+                <ComboBoxItem Content="여" />
+            </ComboBox>
+            <Label Width="70" Margin="0,0,0,0" Content="우편번호:"/>
+            <TextBox Width="100" Text="" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+            <Label Width="100" Content="전화번호:"/>
+            <TextBox Text="" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+            <Label Width="100" Content="E-Mail:"/>
+            <TextBox Text="" />
+        </StackPanel>
+    </StackPanel>
+</Window>

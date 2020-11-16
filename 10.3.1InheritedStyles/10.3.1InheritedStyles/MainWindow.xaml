@@ -1,0 +1,81 @@
+﻿<Window x:Class="_10._3._1InheritedStyles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_10._3._1InheritedStyles"
+        mc:Ignorable="d"
+        Title="스타일 상속" Width="550" Height="200" Background="Beige">
+    <Window.Resources>
+        <LinearGradientBrush x:Key="GrayBrush" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Color="Gray" Offset="0"/>
+            <GradientStop Color="Transparent" Offset="0.3"/>
+            <GradientStop Color="White" Offset="0.8"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="OrangeBrush" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Color="IndianRed" Offset="0"/>
+            <GradientStop Color="DarkOrange" Offset="0.3"/>
+            <GradientStop Color="Yellow" Offset="0.9"/>
+        </LinearGradientBrush>
+        <Style x:Key="SizeStyle" TargetType="FrameworkElement">
+            <Setter Property="Width" Value="150" />
+            <Setter Property="Height" Value="30" />
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="Rectangle" BasedOn="{StaticResource SizeStyle}">
+            <Setter Property="Fill" Value="{StaticResource OrangeBrush}"/>
+            <Setter Property="RadiusX" Value="10"/>
+            <Setter Property="RadiusY" Value="10"/>
+        </Style>
+        <Style TargetType="Label" BasedOn="{StaticResource SizeStyle}">
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style TargetType="Button" BasedOn="{StaticResource SizeStyle}">
+            <Setter Property="Background" Value="{StaticResource GrayBrush}"/>
+            <Setter Property="Margin" Value="25,5,5,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Width" Value="100"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Grid.Row="0" Grid.Column="0" />
+        <Label Grid.Row="0" Grid.Column="0" Content="학생" />
+        <Button Grid.Row="1" Grid.Column="0" Content="추가" />
+        <Button Grid.Row="2" Grid.Column="0" Content="편집" />
+        <Button Grid.Row="3" Grid.Column="0" Content="보고서" />
+
+        <Rectangle Grid.Row="0" Grid.Column="1" />
+        <Label Grid.Row="0" Grid.Column="1" Content="과제" />
+        <Button Grid.Row="1" Grid.Column="1" Content="정의" />
+        <Button Grid.Row="2" Grid.Column="1" Content="점수 지정" />
+        <Button Grid.Row="3" Grid.Column="1" Content="보고서" />
+
+        <Rectangle Grid.Row="0" Grid.Column="2" />
+        <Label Grid.Row="0" Grid.Column="2" Content="실험" />
+        <Button Grid.Row="1" Grid.Column="2" Content="정의" />
+        <Button Grid.Row="2" Grid.Column="2" Content="점수 지정" />
+        <Button Grid.Row="3" Grid.Column="2" Content="보고서" />
+
+        <Rectangle Grid.Row="0" Grid.Column="3" />
+        <Label Grid.Row="0" Grid.Column="3" Content="시험" />
+        <Button Grid.Row="1" Grid.Column="3" Content="정의" />
+        <Button Grid.Row="2" Grid.Column="3" Content="점수 지정" />
+        <Button Grid.Row="3" Grid.Column="3" Content="보고서" />
+    </Grid>
+</Window>
